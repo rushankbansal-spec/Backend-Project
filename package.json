@@ -2,19 +2,23 @@
   "name": "fullbackend",
   "version": "1.0.0",
   "description": "full backend project",
-  "types": "module",
   "keywords": [
     "javascript"
   ],
   "license": "ISC",
   "author": "Rushank bansal",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "devDependencies": {
-    "nodemon": "^3.1.14",
-    "prettier": "^3.8.4"
+    "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongodb": "3.6",
+    "mongoose": "^9.7.1"
   }
 }
