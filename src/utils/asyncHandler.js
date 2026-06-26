@@ -7,5 +7,5 @@ const asyncHandler = (fn) => async (req, res, next) => {
             message: error.message || "Internal Server Error"
         });
     }
-}; s
+}; 
 export { asyncHandler };
